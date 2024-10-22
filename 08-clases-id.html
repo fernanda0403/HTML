@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>☠ Clases y Id</title>
+</head>
+<body>
+    <h1>☠ Clases y Id</h1>
+    <p>Las clases y id se utiliizan para identificar y agrupar elementos de un documento HTML</p>
+    <p>nos permiten aplicar estilos o comportamientos especificos a estos elementos</p>
+
+<!--
+    Atributo Id
+
+    Se utiliza para idenidficar de manera unica un elemento de la página.
+
+    No puede aver un más de un elemento con el mismo Id en una página.    
+    
+    Se utiliza para seleccionar un elemeto especifico en CSS o Javascript.
+
+    id="nombreId"
+-->
+    
+<h2 id="title-1">Puchunguito! 🤷‍♀️</h2>
+<h2 id="title-2">Puchunguita! 🙆‍♀️</h2>
+
+<style>
+
+/* Aqui ecribimos el código CSS */
+
+#title-1 {
+    /* Aqui las propiedes CSS */
+    color: teal;
+    font-size: 32px;
+}
+
+#title-2 {
+    color: blueviolet;
+    font-size: 16px;
+}
+
+</style>
+
+<!--
+    atributo class
+    Se utiliza para agrupar varios elementos sobre una misma clase
+
+    a diferencia de Id podemos usar la misma clase para varios elementos de a página
+
+    sirve para aplicar estilos o comportaminetos a un conjunto de elementos que comparten algo en cómun.
+
+    class="nombreClass"
+-->
+
+<section>
+    <h3 class="subtitle">Subtitulo 1</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci libero dicta itaque voluptate laborum accusamus optio cum ullam autem, culpa obcaecati? Totam libero sequi aliquam, aperiam reprehenderit tempore esse! Quasi.</p>
+</section>
+
+<section>
+    <h3 class="subtitle">Subtitulo 2</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci libero dicta itaque voluptate laborum accusamus optio cum ullam autem, culpa obcaecati? Totam libero sequi aliquam, aperiam reprehenderit tempore esse! Quasi.</p>
+</section>
+
+<section>
+    <h3 class="subtitle">Subtitulo 3</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci libero dicta itaque voluptate laborum accusamus optio cum ullam autem, culpa obcaecati? Totam libero sequi aliquam, aperiam reprehenderit tempore esse! Quasi.</p>
+</section>
+
+<section>
+    <h3 class="subtitle">Subtitulo 4</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci libero dicta itaque voluptate laborum accusamus optio cum ullam autem, culpa obcaecati? Totam libero sequi aliquam, aperiam reprehenderit tempore esse! Quasi.</p>
+</section>
+
+<style>
+    .subtitle {
+        color:orange;
+        font-family: Impact;
+        font-size: 50px;
+        background-color: rgb(189, 7, 189);
+    }
+
+    .paragraph {
+        color: black;
+        background-color: aquamarine;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+</style>
+
+</body>
+</html>
