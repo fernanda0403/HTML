@@ -10,18 +10,18 @@
     <!--Seccion contacto-->
 
     <section>
-        <h2>Contácto</h2>
-
+        
         <!--
             Atributos comunes en inputs
-
+            
             placeholder="valor" -> Mostrar u texto dentro del campo antes de que el usurio escriba algo.
             Es como una sugerencia del dato que se espera.
-
+            
             required -> No recibe valor, es un atributo booleano. Indica que el campo es obligatorio y debe ser completado antes de envia el formulario.
-        -->
-
-        <form  id="formulario">
+            -->
+            
+            <form  id="formulario">
+            <h2>Contácto</h2>
 
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" placeholder="Juan Peréz" required />
@@ -32,7 +32,7 @@
             <input type="email" id="email" placeholder="email@gmail.com" required />
             <br>
             
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje">Mensaje</label><br>
             <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
             <br>
 
@@ -41,14 +41,30 @@
         </form>
 
         <!--Contenedor del mensaje de confirmación (Ficticio)-->
-        <div id="mensaje" style="display: none;">
+        <div id="mensajeConfirmar" style="display: none;">
             <p>Gracias por completar el formulario, Nos cumunicaremos contigo pronto¡ 😽😘❣</p>
         </div>
 
         <script>
-            /*Codigo para que funcione el formulario*/
+            /* Codigo para que funcione el formulario */
+            // Obtener el formulario y el mensaje de confirmación
 
+            const miFormulario = document.getElementById("formulario");
+            const mensajeConfirmacion = document.getElementById("mensajeConfirmar");
+            //Añadir un "escuchador" / "listener" para el "evento" / "event" del botón "submit"
             
+            miFormulario.addEventListener( "submit" , function(event){
+                // Código que se va a ejecutar cuando el usuario le pique en el botón
+                //alert("Haz dado click en el botón enviar!")
+                event.preventDefault(); //evia que el formulario recargue la página
+
+                // Se oculte el elemento <form>
+                    miFormulario.style.display = "none";
+
+                    // Mostramos el elemento div con el mensaje confirmación
+                    mensajeConfirmacion.style.display = "block";
+            })
+
         </script>
 
     </section>
